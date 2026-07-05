@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Prueba la app Glucose Control durante 30 días por un precio especial."
+    />
+    <title>Oferta Especial | Glucose Control App</title>
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <main class="page page--downsell">
+      <header class="topbar" aria-label="Glucose Control">
+        <div class="brand">
+          <img src="../assets/logo-glucose-control.png" alt="Control Glucosa" />
+          <span>App</span>
+        </div>
+
+        <nav class="lang-switcher" aria-label="Idioma">
+          <button class="lang-btn is-active" type="button" data-lang="es">ES</button>
+          <button class="lang-btn" type="button" data-lang="pt">PT</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </nav>
+      </header>
+
+      <section class="downsell-hero">
+        <p class="purchase-note" data-i18n="downsellNote">Espera un momento</p>
+        <h1 data-i18n="downsellHeadline">No queremos que empieces este camino sin apoyo</h1>
+        <p class="hero-copy" data-i18n="downsellCopy">
+          Sabemos que comenzar un protocolo puede traer dudas. Por eso queremos dejarte conocer la app durante 30 días por solo US$9,90.
+        </p>
+      </section>
+
+      <section class="price-card" aria-labelledby="price-title">
+        <p class="price-kicker" data-i18n="priceKicker">Oferta especial para ti</p>
+        <h2 id="price-title" data-i18n="priceTitle">Prueba la app por 30 días</h2>
+        <div class="price-line">
+          <span data-i18n="onlyFor">solo</span>
+          <strong>US$9,90</strong>
+        </div>
+        <p data-i18n="priceCopy">
+          Queremos que puedas sentir cómo es tener tus registros, hábitos y progreso más organizados antes de decidir si continúas.
+        </p>
+        <div class="hotmart-widget" aria-label="Oferta Hotmart">
+          <!-- HOTMART - Sales Funnel Widget -->
+          <div id="hotmart-sales-funnel"></div>
+          <!-- HOTMART - Sales Funnel Widget -->
+        </div>
+        <a class="secondary-link" href="../gracias/" data-i18n="downsellDecline">
+          No, gracias. Continuar sin la app
+        </a>
+      </section>
+
+      <section class="emotion-letter" aria-labelledby="letter-title">
+        <h2 id="letter-title" data-i18n="letterTitle">Una pequeña ayuda puede hacer diferencia</h2>
+        <p data-i18n="letterCopy1">
+          Muchas personas compran el protocolo con motivación, pero en los primeros días se pierden porque no registran lo que están haciendo.
+        </p>
+        <p data-i18n="letterCopy2">
+          La app fue creada justamente para eso: ayudarte a mantener el orden, recordar lo importante y mirar tu evolución con más claridad.
+        </p>
+      </section>
+
+      <section class="downsell-benefits" aria-labelledby="downsell-benefits-title">
+        <h2 id="downsell-benefits-title" data-i18n="downsellBenefitsTitle">Durante estos 30 días podrás</h2>
+        <ul class="benefit-list">
+          <li>
+            <span class="check" aria-hidden="true">✓</span>
+            <span data-i18n="downsellBenefit1">Registrar glucosa, agua, comidas, actividad y medicación en un solo lugar</span>
+          </li>
+          <li>
+            <span class="check" aria-hidden="true">✓</span>
+            <span data-i18n="downsellBenefit2">Acompañar tu constancia mientras sigues el protocolo</span>
+          </li>
+          <li>
+            <span class="check" aria-hidden="true">✓</span>
+            <span data-i18n="downsellBenefit3">Ver tu progreso con más calma y menos confusión</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="app-preview app-preview--compact" aria-label="Vista previa de la app">
+        <div class="phone">
+          <div class="phone-bar"></div>
+          <div class="app-card main-metric">
+            <span data-i18n="glucoseNow">Glucosa actual</span>
+            <strong>108 <small>mg/dL</small></strong>
+            <em data-i18n="inRange">En rango</em>
+          </div>
+          <div class="progress-card">
+            <span data-i18n="progress">Tu progreso</span>
+            <div class="bars" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-downsell" id="downsell-checkout" aria-labelledby="final-downsell-title">
+        <h2 id="final-downsell-title" data-i18n="finalDownsellTitle">Tu acceso especial está disponible ahora</h2>
+        <p data-i18n="finalDownsellCopy">
+          Entra por 30 días, conoce la app y usa este apoyo extra para empezar tu protocolo con más seguridad.
+        </p>
+        <a class="secondary-link" href="../gracias/" data-i18n="downsellDecline">
+          No, gracias. Continuar sin la app
+        </a>
+      </section>
+
+      <p class="medical-note" data-i18n="medicalNote">
+        Esta app apoya el registro y seguimiento personal. No sustituye la orientación de un profesional de salud.
+      </p>
+    </main>
+
+    <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+    <script>
+      checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+    </script>
+    <script src="../app.js?v=3"></script>
+  </body>
+</html>
