@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Gracias por comprar la app de seguimiento de Glucose Control."
+    />
+    <title>Gracias | Glucose Control App</title>
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <main class="page page--thanks">
+      <header class="topbar" aria-label="Glucose Control">
+        <div class="brand">
+          <img src="../assets/logo-glucose-control.png" alt="Control Glucosa" />
+          <span>App</span>
+        </div>
+
+        <nav class="lang-switcher" aria-label="Idioma">
+          <button class="lang-btn is-active" type="button" data-lang="es">ES</button>
+          <button class="lang-btn" type="button" data-lang="pt">PT</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </nav>
+      </header>
+
+      <section class="thanks-hero">
+        <div class="success-mark" aria-hidden="true">✓</div>
+        <p class="purchase-note" data-i18n="thanksNote">Compra confirmada</p>
+        <h1 data-i18n="thanksHeadline">Gracias. Tu acceso al app está listo</h1>
+        <p class="hero-copy" data-i18n="thanksCopy">
+          Tus datos de acceso fueron enviados al correo utilizado en la compra. Úsalos para entrar al app y comenzar tus registros.
+        </p>
+      </section>
+
+      <section class="next-steps" aria-labelledby="next-title">
+        <h2 id="next-title" data-i18n="nextTitle">Qué hacer ahora</h2>
+        <ul class="benefit-list">
+          <li>
+            <span class="check" aria-hidden="true">1</span>
+            <span data-i18n="next1">Abre el correo que usaste en la compra y busca tus datos de acceso.</span>
+          </li>
+          <li>
+            <span class="check" aria-hidden="true">2</span>
+            <span data-i18n="next2">Toca el botón de abajo para entrar al app.</span>
+          </li>
+          <li>
+            <span class="check" aria-hidden="true">3</span>
+            <span data-i18n="next3">Mantén tus registros durante el protocolo para ver tu progreso.</span>
+          </li>
+        </ul>
+        <p class="support-note" data-i18n="thanksSupport">
+          Si no encuentras el correo, revisa spam, promociones o correo no deseado antes de solicitar soporte.
+        </p>
+      </section>
+
+      <section class="thanks-actions" aria-label="Acceso">
+        <a class="primary-cta" href="https://app.glucosecontrol.site" data-i18n="thanksAccessCta">Acceder a la app</a>
+        <a class="secondary-link" href="../index.html" data-i18n="backToOffer">Volver a la página anterior</a>
+      </section>
+
+      <p class="medical-note" data-i18n="medicalNote">
+        Esta app apoya el registro y seguimiento personal. No sustituye la orientación de un profesional de salud.
+      </p>
+    </main>
+
+    <script src="../app.js"></script>
+  </body>
+</html>
